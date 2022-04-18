@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Matthew Clarke</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="/three@0.115.0.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <main>
+        <!-- Home Link -->
+        <!-- <a
+          style="
+            position: fixed;
+            top: 24px;
+            left: 24px;
+            z-index: 99;
+            backdrop-filter: blur(10px);
+            background-color: white;
+            line-height: 145%;
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+            padding: 12px 18px 12px 18px;
+            border: 3px solid black;
+          "
+          href="/"
+        >
+          Matthew Clarke
+        </a> -->
+        <!-- Full Screen Above The Fold -->
+        <div
+          id="three"
+          style="
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            max-width: 1475px;
+            max-height: 1200px;
+
+            z-index: 3;
+          "
+        >
+          <!-- Light 2 Col Section -->
+          <div
+            class="flex"
+            style="
+              position: absolute;
+              bottom: 0;
+              z-index: 9;
+              background-color: white;
+            "
+          >
+            <div
+              class="r-border-right"
+              style="flex: 2; padding: 36px; border-right: 3px solid black"
+            >
+              <p>
+                Matthew Clarke is a technical product lead specializing in
+                stateful prototypes and early-stage user applications. He enjoys
+                design tools, functional programing, and talking with users.
+              </p>
+            </div>
+            <div style="flex: 1; padding: 36px">
+              <a href="https://github.com/mclarkedev" target="_blank">Github</a>
+              <a
+                href="https://www.linkedin.com/in/mattclarkedev/"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <a href="https://calendly.com/mclarkestudio/30" target="_blank"
+                >Calendly</a
+              >
+              <a href="/Matthew Clarke - Resume 2022.pdf" target="_blank"
+                >Resume</a
+              >
+            </div>
+          </div>
+          <!-- Blurred Image -->
+          <img
+            class="blurred"
+            src="/1@0.25.png"
+            style="
+              position: absolute;
+              top: 0px;
+              right: 0;
+              width: 200%;
+              height: 100%;
+              max-height: 1200px;
+              max-width: 1475px;
+            "
+          />
+        </div>
+
+        <!-- 1 Start Article ------------------------------------------------- -->
+        <div class="header">
+          <div style="flex: 1">
+            <h1>
+              Arthur
+              <sup> Product Design Lead </sup>
+            </h1>
+          </div>
+          <div class="header-centered-monospace">
+            Figma <br />
+            TypeScript <br />
+            React Native <br />
+            Redux <br />
+            Reanimated 2 <br />
+            Next.js
+          </div>
+        </div>
+        <div class="flex" style="flex-direction: row-reverse">
+          <div style="flex: 2; padding: 36px">
+            <p style="text-align: right">
+              From finding the perfect painting to discovering a new artist,
+              Arthur organizes the world of art so you know what's going on, why
+              it matters, and how to get involved.
+            </p>
+          </div>
+          <div
+            class="links"
+            style="
+              flex: 1;
+              padding: 36px;
+              max-width: 300px;
+              border-right: 3px solid black;
+            "
+          >
+            <a href="https://apps.apple.com/us/app/arthur-art-data/id1544839942"
+              >App Store</a
+            >
+            <a
+              href="https://play.google.com/store/apps/details?id=art.askarthur.arthur.android&hl=en_US&gl=US"
+              >Play Store</a
+            >
+          </div>
+        </div>
+        <div class="flex img-viewer" style="flex: 1">
+          <aside class="flex img-viewer-aside" style="margin-right: 36px">
+            <img
+              onclick="document.getElementById('viewer-1').setAttribute('src', 'a1.png')"
+              src="a1.png"
+              loading="lazy"
+            />
+            <img
+              onclick="document.getElementById('viewer-1').setAttribute('src', 'a2.png')"
+              src="a2.png"
+              loading="lazy"
+            />
+            <img
+              onclick="document.getElementById('viewer-1').setAttribute('src', 'a3.png')"
+              src="a3.png"
+              loading="lazy"
+            />
+          </aside>
+          <div style="flex: 2">
+            <img
+              id="viewer-1"
+              class="img-viewer-main"
+              src="a1.png"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <!-- 1 End Article ------------------------------------------------- -->
+
+        <!-- 2 Start Article ------------------------------------------------- -->
+        <div class="flex header">
+          <div style="flex: 1">
+            <h1>
+              Liminal
+              <sup> Concept Design</sup>
+            </h1>
+          </div>
+          <div class="header-centered-monospace">
+            Figma <br />
+            TypeScript <br />
+            React <br />
+            Electron <br />
+          </div>
+        </div>
+        <div class="flex" style="flex-direction: row">
+          <div style="flex: 2; padding: 36px">
+            <p style="text-align: left">
+              Designed for creatives, researchers, and curious people, Liminal
+              makes collecting web media more reliable, secure, and extensible.
+            </p>
+          </div>
+          <div
+            class="links"
+            style="
+              flex: 1;
+              padding: 36px;
+              max-width: 300px;
+              border-left: 3px solid black;
+            "
+          >
+            <span class="link" style="color: gray">☁️ WIP</span>
+          </div>
+        </div>
+        <div
+          class="flex img-viewer"
+          style="flex: 1; flex-direction: row-reverse"
+        >
+          <aside class="flex img-viewer-aside">
+            <img
+              onclick="document.getElementById('viewer-2').setAttribute('src', 'l1.png')"
+              src="l1.png"
+              loading="lazy"
+            />
+            <img
+              onclick="document.getElementById('viewer-2').setAttribute('src', 'l2.png')"
+              src="l2.png"
+              loading="lazy"
+            />
+            <img
+              onclick="document.getElementById('viewer-2').setAttribute('src', 'l3.png')"
+              src="l3.png"
+              loading="lazy"
+            />
+          </aside>
+          <div style="flex: 2; margin-right: 36px">
+            <img
+              id="viewer-2"
+              class="img-viewer-main"
+              src="l1.png"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <!-- 2 End Article ------------------------------------------------- -->
+
+        <!-- 3 Start Article ------------------------------------------------- -->
+        <div class="flex header">
+          <div style="flex: 1">
+            <h1>
+              Datavore
+              <!-- <sup> Product Design Lead </sup> -->
+            </h1>
+          </div>
+          <div class="header-centered-monospace">
+            Figma <br />
+            TypeScript <br />
+            React <br />
+            Angular <br />
+            Material UI
+          </div>
+        </div>
+        <div class="flex" style="flex-direction: row-reverse">
+          <div style="flex: 2; padding: 36px">
+            <p style="text-align: right">
+              Discover and track indicators across datasets in order to test and
+              validate signals.
+            </p>
+          </div>
+          <div
+            class="links"
+            style="
+              flex: 1;
+              padding: 36px;
+              max-width: 300px;
+              border-right: 3px solid black;
+            "
+          >
+            <a href="https://www.datavorelabs.com">Website</a>
+          </div>
+        </div>
+        <div class="flex img-viewer" style="flex: 1">
+          <aside class="flex img-viewer-aside" style="margin-right: 36px">
+            <img
+              onclick="document.getElementById('viewer-3').setAttribute('src', 'd1.png')"
+              src="d1.png"
+              loading="lazy"
+            />
+            <img
+              onclick="document.getElementById('viewer-3').setAttribute('src', 'd2.png')"
+              src="d2.png"
+              loading="lazy"
+            />
+            <img
+              onclick="document.getElementById('viewer-3').setAttribute('src', 'd3.png')"
+              src="d3.png"
+              loading="lazy"
+            />
+          </aside>
+          <div style="flex: 2">
+            <img
+              id="viewer-3"
+              class="img-viewer-main"
+              src="d1.png"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <!-- 3 End Article ------------------------------------------------- -->
+
+        <!-- 4 Start Article ------------------------------------------------- -->
+        <div class="flex header">
+          <div style="flex: 1">
+            <h1>
+              Splashlight
+              <!-- <sup> Product Design Lead </sup> -->
+            </h1>
+          </div>
+          <div class="header-centered-monospace">
+            Figma <br />
+            TypeScript <br />
+            React <br />
+            Angular <br />
+            Material UI
+          </div>
+        </div>
+        <div class="flex" style="flex-direction: row">
+          <div style="flex: 2; padding: 36px">
+            <p style="text-align: right">
+              Elevated content at speed and scale. Simplify the complex
+              omnichannel content creation process and focus on your customer
+              journey.
+            </p>
+          </div>
+          <div
+            class="links"
+            style="
+              flex: 1;
+              padding: 36px;
+              max-width: 300px;
+              border-left: 3px solid black;
+            "
+          >
+            <a href="https://www.splashlight.com">Website</a>
+          </div>
+        </div>
+        <div
+          class="flex img-viewer"
+          style="flex: 1; flex-direction: row-reverse"
+        >
+          <aside class="flex img-viewer-aside">
+            <img
+              onclick="document.getElementById('viewer-4').setAttribute('src', 's1.png')"
+              src="s1.png"
+              loading="lazy"
+            />
+            <img
+              onclick="document.getElementById('viewer-4').setAttribute('src', 's2.png')"
+              src="s2.png"
+              loading="lazy"
+            />
+            <img
+              onclick="document.getElementById('viewer-4').setAttribute('src', 's3.png')"
+              src="s3.png"
+              loading="lazy"
+            />
+          </aside>
+          <div style="flex: 2; margin-right: 36px">
+            <img
+              id="viewer-4"
+              class="img-viewer-main"
+              src="s1.png"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <!-- 4 End Article ------------------------------------------------- -->
+        <footer
+          style="
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+            margin-top: 220px;
+          "
+        >
+          <!-- Light 2 Col Section -->
+          <div class="flex" style="z-index: 9; background-color: white">
+            <div style="flex: 2; padding: 36px">
+              <p>© 2022</p>
+            </div>
+            <div style="flex: 1; padding: 36px; max-width: 300px">
+              <a href="https://github.com/mclarkedev" target="_blank">Github</a>
+              <a
+                href="https://www.linkedin.com/in/mattclarkedev/"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <a href="https://calendly.com/mclarkestudio/30" target="_blank"
+                >Calendly</a
+              >
+              <a href="/Matthew Clarke - Resume 2022.pdf" target="_blank"
+                >Resume</a
+              >
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
