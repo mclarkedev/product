@@ -78,3 +78,13 @@ function render() {
   renderer.render(scene, camera);
   requestAnimationFrame(render);
 }
+
+// Body Motion
+
+var animation = bodymovin.loadAnimation({
+  container: document.getElementById("bodymotion"),
+  renderer: "svg",
+  loop: true,
+  autoplay: true,
+  path: "m-white.json",
+});

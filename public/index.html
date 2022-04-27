@@ -17,6 +17,7 @@
     <meta property="og:image" content="og.png" />
 
     <script src="/three@0.115.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.3/lottie.min.js"></script>
   </head>
   <body>
     <div>
@@ -42,6 +43,19 @@
         </a> -->
         <!-- Full Screen Above The Fold -->
         <div
+          id="bodymotion"
+          style="
+            z-index: 999;
+            position: absolute;
+            width: 100px;
+            top: 28vh;
+            left: 50vw;
+            transform: translate(-50%);
+            /* max-width: 1475px; */
+            padding: 32px;
+          "
+        ></div>
+        <div
           id="three"
           style="
             position: relative;
@@ -63,6 +77,17 @@
               background-color: white;
             "
           >
+            <!-- <div
+              id="bodymotion"
+              style="
+                z-index: 999;
+                position: absolute;
+                width: 100px;
+                top: -112px;
+                max-width: 1475px;
+                padding: 32px;
+              "
+            ></div> -->
             <div
               class="r-border-right"
               style="flex: 2; padding: 36px; border-right: 3px solid black"
