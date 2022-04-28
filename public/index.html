@@ -178,28 +178,43 @@
         <div class="flex img-viewer" style="flex: 1">
           <aside class="flex img-viewer-aside" style="margin-right: 36px">
             <img
-              onclick="document.getElementById('viewer-1').setAttribute('src', 'a1.png')"
+              onclick="document.getElementById('video-1').setAttribute('style', 'display: none;');
+              document.getElementById('viewer-1').setAttribute('style', 'display: block;');
+              document.getElementById('viewer-1').setAttribute('src', 'a1.png')"
               src="a1.png"
               loading="lazy"
             />
             <img
-              onclick="document.getElementById('viewer-1').setAttribute('src', 'a2.png')"
+              onclick="document.getElementById('video-1').setAttribute('style', 'display: none;');
+              document.getElementById('viewer-1').setAttribute('style', 'display: block;');
+              document.getElementById('viewer-1').setAttribute('src', 'a2.png')"
               src="a2.png"
               loading="lazy"
             />
             <img
-              onclick="document.getElementById('viewer-1').setAttribute('src', 'a3.png')"
+              onclick="document.getElementById('video-1').setAttribute('style', 'display: none;');
+              document.getElementById('viewer-1').setAttribute('style', 'display: block;');
+              document.getElementById('viewer-1').setAttribute('src', 'a3.png')"
               src="a3.png"
               loading="lazy"
             />
+            <video
+              onclick="document.getElementById('viewer-1').setAttribute('style', 'display: none;');
+              document.getElementById('video-1').setAttribute('style', 'display: block;');"
+            >
+              <source src="a1.mov" type="video/mp4" />
+            </video>
           </aside>
-          <div style="flex: 2">
+          <div id="viewer-container" style="flex: 2">
             <img
               id="viewer-1"
               class="img-viewer-main"
               src="a1.png"
               loading="lazy"
             />
+            <video id="video-1" controls autoplay="true" style="display: none">
+              <source src="a1.mov" type="video/mp4" />
+            </video>
           </div>
         </div>
         <!-- 1 End Article ------------------------------------------------- -->
@@ -324,20 +339,33 @@
         <div class="flex img-viewer" style="flex: 1">
           <aside class="flex img-viewer-aside" style="margin-right: 36px">
             <img
-              onclick="document.getElementById('viewer-3').setAttribute('src', 'd1.png')"
+              onclick="document.getElementById('video-3').setAttribute('style', 'display: none;');
+              document.getElementById('viewer-3').setAttribute('style', 'display: block;');
+              document.getElementById('viewer-3').setAttribute('src', 'd1.png')"
               src="d1.png"
               loading="lazy"
             />
             <img
-              onclick="document.getElementById('viewer-3').setAttribute('src', 'd2.png')"
+              onclick="document.getElementById('video-3').setAttribute('style', 'display: none;');
+              document.getElementById('viewer-3').setAttribute('style', 'display: block;');
+              document.getElementById('viewer-3').setAttribute('src', 'd2.png')"
               src="d2.png"
               loading="lazy"
             />
             <img
-              onclick="document.getElementById('viewer-3').setAttribute('src', 'd3.png')"
+              onclick="document.getElementById('video-3').setAttribute('style', 'display: none;');
+              document.getElementById('viewer-3').setAttribute('style', 'display: block;');
+              document.getElementById('viewer-3').setAttribute('src', 'd3.png')"
               src="d3.png"
               loading="lazy"
             />
+            <video
+              style="border: 2px solid lightgray"
+              onclick="document.getElementById('viewer-3').setAttribute('style', 'display: none;');
+            document.getElementById('video-3').setAttribute('style', 'display: block; border: 2px solid lightgray;');"
+            >
+              <source src="d1.mp4" type="video/mp4" />
+            </video>
           </aside>
           <div style="flex: 2">
             <img
@@ -346,6 +374,14 @@
               src="d1.png"
               loading="lazy"
             />
+            <video
+              id="video-3"
+              controls
+              autoplay="true"
+              style="display: none; border: 2px solid lightgray"
+            >
+              <source src="d1.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
         <!-- 3 End Article ------------------------------------------------- -->
