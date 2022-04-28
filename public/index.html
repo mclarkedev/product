@@ -433,20 +433,33 @@
         >
           <aside class="flex img-viewer-aside">
             <img
-              onclick="document.getElementById('viewer-4').setAttribute('src', 's1.png')"
+              onclick="document.getElementById('video-4').setAttribute('style', 'display: none;');
+              document.getElementById('viewer-4').setAttribute('style', 'display: block;');
+              document.getElementById('viewer-4').setAttribute('src', 's1.png')"
               src="s1.png"
               loading="lazy"
             />
             <img
-              onclick="document.getElementById('viewer-4').setAttribute('src', 's2.png')"
+              onclick="document.getElementById('video-4').setAttribute('style', 'display: none;');
+            document.getElementById('viewer-4').setAttribute('style', 'display: block;');
+            document.getElementById('viewer-4').setAttribute('src', 's2.png')"
               src="s2.png"
               loading="lazy"
             />
             <img
-              onclick="document.getElementById('viewer-4').setAttribute('src', 's3.png')"
+              onclick="document.getElementById('video-4').setAttribute('style', 'display: none;');
+              document.getElementById('viewer-4').setAttribute('style', 'display: block;');
+              document.getElementById('viewer-4').setAttribute('src', 's3.png')"
               src="s3.png"
               loading="lazy"
             />
+            <video
+              style="border: 2px solid lightgray"
+              onclick="document.getElementById('viewer-4').setAttribute('style', 'display: none;');
+              document.getElementById('video-4').setAttribute('style', 'display: block; border: 2px solid lightgray;');"
+            >
+              <source src="s1.mp4" type="video/mp4" />
+            </video>
           </aside>
           <div style="flex: 2; margin-right: 36px">
             <img
@@ -455,6 +468,14 @@
               src="s1.png"
               loading="lazy"
             />
+            <video
+              id="video-4"
+              controls
+              autoplay="true"
+              style="display: none; border: 2px solid lightgray"
+            >
+              <source src="s1.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
         <!-- 4 End Article ------------------------------------------------- -->
