@@ -45,7 +45,7 @@ a::before {
 }
 
 p {
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 144%;
   margin: 0px;
   /* margin-bottom: 1vw; */
@@ -57,10 +57,11 @@ p {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 300;
   margin-top: 24px;
   margin-bottom: 36px;
+  margin-top: 0px;
 }
 
 sup {
@@ -115,6 +116,10 @@ sup {
 }
 
 @media (max-width: 760px) {
+  .hide-mobile {
+    display: none;
+  }
+
   p {
     text-align: left !important;
     font-size: larger;
@@ -163,21 +168,27 @@ sup {
 
 .header {
   /* display: flex; */
-  padding: 36px;
-  /* padding-bottom: 0px; BUG */
-  /* border-top: 40px solid rgb(245, 245, 245); */
+  /* padding: 36px; */
+  border-top: 40px solid rgb(245, 245, 245);
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
 
-  background-color: black;
+  /* background-image: url("1@0.25.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white; */
+
+  background-color: #38373d;
   color: white;
 }
 
-.header-centered-monospace {
+/* .header-centered-monospace {
   text-align: left;
   font-family: monospace;
   margin-top: auto;
   margin-bottom: auto;
   color: white;
-}
+} */
 
 .img-viewer-main {
   width: 100%;
@@ -211,4 +222,12 @@ sup {
 
   cursor: pointer;
   /* transition: ease 0.2s; */
+}
+
+.header-item {
+  flex: 1;
+  padding-left: 36px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-right: 1px solid rgb(116, 116, 116);
 }
