@@ -33,6 +33,20 @@ a,
   transition: ease-in-out 0.3s;
 }
 
+.case-study {
+  background-color: #f0c70f35;
+  color: black;
+  /* border: 2px solid rgb(255, 208, 0); */
+}
+
+.case-study::before {
+  content: " ";
+}
+
+.case-study:hover {
+  background-color: #f0c70fa4;
+}
+
 a:hover {
   background-color: rgb(201, 201, 201);
 }
