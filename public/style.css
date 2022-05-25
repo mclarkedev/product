@@ -17,7 +17,7 @@ canvas {
   /* top: 0px;
   left: 50%;
   transform: translateX(-50%); */
-  margin-top: 70px;
+  margin-top: 30px;
   width: 600px;
   height: 250px;
   z-index: -1;
@@ -51,7 +51,7 @@ a,
   gap: 45px;
 }
 
-.grid > img {
+.grid > * {
   width: 130px;
   height: 85px;
   object-fit: cover;

@@ -34,7 +34,6 @@
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
   margin: auto;
   padding: 0;
   width: 90%;
@@ -108,7 +107,7 @@
 .caption-container {
   text-align: center;
   background-color: black;
-  padding: 2px 16px;
+  padding: 16px;
   color: white;
 }
 
