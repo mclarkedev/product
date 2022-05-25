@@ -1,529 +1,181 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Matthew Clarke</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="lightbox.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="icon" type="image/png" href="favicon.png" />
 
-    <meta property="og:title" content="Matthew Clarke - Product Lead" />
-    <meta
-      property="og:description"
-      content="Matthew Clarke is a technical product lead specializing in stateful prototypes and early-stage user applications. He enjoys design tools, functional programing, and talking with users."
-    />
+    <meta property="og:title" content="Matthew Clarke" />
+    <meta property="og:description"
+        content="Matthew Clarke is a digital product design lead specializing in launching
+        early-stage user applications and building product teams." />
     <meta property="og:url" content="https://www.mattclarke.dev" />
     <meta property="og:image" content="og.png" />
 
     <script src="/three@0.115.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.3/lottie.min.js"></script>
-  </head>
-  <body>
-    <div>
-      <main>
-        <!-- Home Link -->
-        <!-- <a
-          style="
+</head>
+
+<body>
+    <div style=" max-height: 200px;">
+        <div id="bodymotion" 
+        style="
             position: fixed;
-            top: 24px;
-            left: 24px;
-            z-index: 99;
-            backdrop-filter: blur(10px);
-            background-color: white;
-            line-height: 145%;
-            color: rgb(0, 0, 0);
-            font-weight: 500;
-            padding: 12px 18px 12px 18px;
-            border: 2px solid lightgray;
-          "
-          href="/"
-        >
-          Matthew Clarke
-        </a> -->
-        <!-- Full Screen Above The Fold -->
-        <div
-          id="bodymotion"
-          style="
-            z-index: 999;
-            position: absolute;
-            width: 100px;
-            left: 50vw;
-            transform: translate(-50%);
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
             height: 70vh;
-            max-width: 1475px;
-            max-height: 900px;
+            max-height: 20px;
             padding: 32px;
-          "
+            z-index: 9;
+        "
         ></div>
-        <div
-          id="three"
-          style="
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            max-width: 1475px;
-            max-height: 1200px;
+        <main>
+            <h1>Matthew Clarke</h1>
 
-            z-index: 3;
-          "
-        >
-          <!-- Light 2 Col Section -->
-          <div
-            class="flex"
-            style="
-              position: absolute;
-              bottom: 0;
-              z-index: 9;
-              background-color: white;
-            "
-          >
-            <!-- <div
-              id="bodymotion"
-              style="
-                z-index: 999;
-                position: absolute;
-                width: 100px;
-                top: -112px;
-                max-width: 1475px;
-                padding: 32px;
-              "
-            ></div> -->
-            <div
-              class="r-border-right"
-              style="flex: 2; padding: 36px; border-right: 2px solid lightgray"
-            >
-              <p style="max-width: 90ch">
-                Matthew Clarke is a digital product designer specializing in
-                stateful prototypes and early-stage user applications. He enjoys
-                design tools, functional programing, and talking with users.
-              </p>
-            </div>
-            <div style="flex: 1; padding: 36px">
-              <a href="https://github.com/mclarkedev" target="_blank">Github</a>
-              <a
-                href="https://www.linkedin.com/in/mattclarkedev/"
-                target="_blank"
-                >LinkedIn</a
-              >
-              <a href="https://calendly.com/mclarkestudio/30" target="_blank"
-                >Calendly</a
-              >
-              <a href="/Matthew Clarke - Product Designer - Resume.pdf" target="_blank"
-                >Resume</a
-              >
-            </div>
-          </div>
-          <!-- Blurred Image -->
-          <img
-            class="blurred"
-            src="/1@0.25.png"
-            style="
-              position: absolute;
-              top: 0px;
-              right: 0;
-              width: 200%;
-              height: 100%;
-              max-height: 1200px;
-              max-width: 1475px;
-            "
-          />
-        </div>
-
-        <!-- 1 Start Article ------------------------------------------------- -->
-        <div class="header">
-          <div class="header-item">
-            <h1>Arthur</h1>
-          </div>
-          <div class="header-item hide-mobile">
-            <h5>Role</h5>
-            Product Design Lead
-          </div>
-          <div class="header-item hide-mobile">
-            <h5>Responsibilities</h5>
-            Product Design <br />
-            Product Development
-          </div>
-          <div class="header-item hide-mobile">
-            <h5>Technologies</h5>
-            TypeScript <br />
-            React Native <br />
-            Redux <br />
-            Reanimated 2 <br />
-            Next.js <br />
-            Figma <br />
-          </div>
-        </div>
-        <div class="flex" style="flex-direction: row-reverse">
-          <div style="flex: 2; padding: 36px">
-            <p style="text-align: right; margin-left: auto">
-              From finding the perfect painting to discovering a new artist,
-              Arthur organizes the world of art so you know what's going on, why
-              it matters, and how to get involved.
+            <p>
+                Hi! I'm a digital product design lead specializing in launching
+                early-stage user applications and building product teams.
             </p>
-          </div>
-          <div
-            class="links"
-            style="flex: 1; padding: 36px; border-right: 2px solid lightgray"
-          >
-            <a
-              target="_blank"
-              href="https://apps.apple.com/us/app/arthur-art-data/id1544839942"
-              >App Store</a
-            >
-            <a
-              target="_blank"
-              href="https://play.google.com/store/apps/details?id=art.askarthur.arthur.android&hl=en_US&gl=US"
-              >Play Store</a
-            >
-            <a
-              class="case-study"
-              target="_blank"
-              href="https://mclarke.notion.site/Arthur-986700a7a8d448a89a3737d098a3a34e"
-              >Learn More</a
-            >
-          </div>
-        </div>
-        <div class="flex img-viewer" style="flex: 1">
-          <aside class="flex img-viewer-aside" style="margin-right: 36px">
-            <img
-              onclick="document.getElementById('video-1').setAttribute('style', 'display: none;');
-              document.getElementById('viewer-1').setAttribute('style', 'display: block;');
-              document.getElementById('viewer-1').setAttribute('src', 'a1.png')"
-              src="a1.png"
-              loading="lazy"
-            />
-            <img
-              onclick="document.getElementById('video-1').setAttribute('style', 'display: none;');
-              document.getElementById('viewer-1').setAttribute('style', 'display: block;');
-              document.getElementById('viewer-1').setAttribute('src', 'a2.png')"
-              src="a2.png"
-              loading="lazy"
-            />
-            <img
-              onclick="document.getElementById('video-1').setAttribute('style', 'display: none;');
-              document.getElementById('viewer-1').setAttribute('style', 'display: block;');
-              document.getElementById('viewer-1').setAttribute('src', 'a3.png')"
-              src="a3.png"
-              loading="lazy"
-            />
-            <video
-              onclick="document.getElementById('viewer-1').setAttribute('style', 'display: none;');
-              document.getElementById('video-1').setAttribute('style', 'display: block;');"
-            >
-              <source src="a1.mov" type="video/mp4" />
-            </video>
-          </aside>
-          <div id="viewer-container" style="flex: 2">
-            <img
-              id="viewer-1"
-              class="img-viewer-main"
-              src="a1.png"
-              loading="lazy"
-            />
-            <video id="video-1" controls autoplay="true" style="display: none">
-              <source src="a1.mov" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-        <!-- 1 End Article ------------------------------------------------- -->
-
-        <!-- 2 Start Article ------------------------------------------------- -->
-        <div class="flex header">
-          <div class="header-item">
-            <h1>Liminal</h1>
-          </div>
-          <div class="header-item hide-mobile">
-            <h5>Role</h5>
-            Concept Design
-          </div>
-          <div class="header-item hide-mobile">
-            <h5>Responsibilities</h5>
-            Product Design <br />
-          </div>
-          <div class="header-item hide-mobile">
-            <h5>Technologies</h5>
-            Figma <br />
-            TypeScript <br />
-            React <br />
-            Electron <br />
-          </div>
-        </div>
-        <div class="flex" style="flex-direction: row">
-          <div style="flex: 2; padding: 36px">
-            <p style="text-align: left">
-              Designed for creatives, researchers, and curious people, Liminal
-              makes collecting web media more reliable, secure, and extensible.
+            <p>
+                I'm currently on sabbatical studying personal computing and artificial
+                intelligence.
             </p>
-          </div>
-          <div
-            class="links"
-            style="
-              flex: 1;
-              padding: 36px;
-              max-width: 300px;
-              border-left: 2px solid lightgray;
-            "
-          >
-            <span class="link" style="color: gray">☁️ WIP</span>
-          </div>
-        </div>
-        <div
-          class="flex img-viewer"
-          style="flex: 1; flex-direction: row-reverse"
-        >
-          <aside class="flex img-viewer-aside">
-            <img
-              onclick="document.getElementById('viewer-2').setAttribute('src', 'l1.png')"
-              src="l1.png"
-              loading="lazy"
-            />
-            <img
-              onclick="document.getElementById('viewer-2').setAttribute('src', 'l2.png')"
-              src="l2.png"
-              loading="lazy"
-            />
-            <img
-              onclick="document.getElementById('viewer-2').setAttribute('src', 'l3.png')"
-              src="l3.png"
-              loading="lazy"
-            />
-          </aside>
-          <div style="flex: 2; margin-right: 36px">
-            <img
-              id="viewer-2"
-              class="img-viewer-main"
-              src="l1.png"
-              loading="lazy"
-            />
-          </div>
-        </div>
-        <!-- 2 End Article ------------------------------------------------- -->
-
-        <!-- 3 Start Article ------------------------------------------------- -->
-        <div class="flex header">
-          <div class="header-item">
-            <h1>
-              Datavore
-              <sup> </sup>
-            </h1>
-          </div>
-          <div class="header-item hide-mobile">
-            <h5>Role</h5>
-            Product Design Lead
-          </div>
-          <div class="header-item hide-mobile">
-            <h5>Responsibilities</h5>
-            Product Design <br />
-            CSS Development <br />
-          </div>
-          <div class="header-item hide-mobile">
-            <h5>Technologies</h5>
-            Figma <br />
-            Javascript <br />
-            React <br />
-            Angular <br />
-            Material UI
-          </div>
-        </div>
-        <div class="flex" style="flex-direction: row-reverse">
-          <div style="flex: 2; padding: 36px">
-            <p style="text-align: right">
-              Discover and track indicators across datasets in order to test and
-              validate signals.
+            <h1>Values</h1>
+            <figure>
+                <blockquote cite="https://en.wikipedia.org/wiki/Th%C3%ADch_Nh%E1%BA%A5t_H%E1%BA%A1nh">
+                    To be able to provide help, we have to have a little calm, a little
+                    joy, a little compassion in ourselves.
+                </blockquote>
+                <figcaption>Thích Nhất Hạnh</figcaption>
+            </figure>
+            <p>
+                Good design is achieved organically. While there is value in top-down
+                approaches, I believe skilled craftspeople perform best when they're
+                personally invested. With this in mind, I strive to lead mindful product
+                teams that value inclusive design and sustainability in order to build
+                delightful experiences that endure time.
             </p>
-          </div>
-          <div
-            class="links"
-            style="
-              flex: 1;
-              padding: 36px;
-              max-width: 300px;
-              border-right: 2px solid lightgray;
-            "
-          >
-            <a href="https://www.datavorelabs.com">Website</a>
-            <a
-              class="case-study"
-              target="_blank"
-              href="https://mclarke.notion.site/Datavore-237280f9419a4c889020e1183df367c4"
-              >Learn More</a
-            >
-          </div>
-        </div>
-        <div class="flex img-viewer" style="flex: 1">
-          <aside class="flex img-viewer-aside" style="margin-right: 36px">
-            <img
-              onclick="document.getElementById('video-3').setAttribute('style', 'display: none;');
-              document.getElementById('viewer-3').setAttribute('style', 'display: block;');
-              document.getElementById('viewer-3').setAttribute('src', 'd1.png')"
-              src="d1.png"
-              loading="lazy"
-            />
-            <img
-              onclick="document.getElementById('video-3').setAttribute('style', 'display: none;');
-              document.getElementById('viewer-3').setAttribute('style', 'display: block;');
-              document.getElementById('viewer-3').setAttribute('src', 'd2.png')"
-              src="d2.png"
-              loading="lazy"
-            />
-            <img
-              onclick="document.getElementById('video-3').setAttribute('style', 'display: none;');
-              document.getElementById('viewer-3').setAttribute('style', 'display: block;');
-              document.getElementById('viewer-3').setAttribute('src', 'd3.png')"
-              src="d3.png"
-              loading="lazy"
-            />
-            <video
-              style="border: 2px solid lightgray"
-              onclick="document.getElementById('viewer-3').setAttribute('style', 'display: none;');
-            document.getElementById('video-3').setAttribute('style', 'display: block; border: 2px solid lightgray;');"
-            >
-              <source src="d1.mp4" type="video/mp4" />
-            </video>
-          </aside>
-          <div style="flex: 2">
-            <img
-              id="viewer-3"
-              class="img-viewer-main"
-              src="d1.png"
-              loading="lazy"
-            />
-            <video
-              id="video-3"
-              controls
-              autoplay="true"
-              style="display: none; border: 2px solid lightgray"
-            >
-              <source src="d1.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-        <!-- 3 End Article ------------------------------------------------- -->
-
-        <!-- 4 Start Article ------------------------------------------------- -->
-        <div class="flex header">
-          <div class="header-item">
-            <h1>Splashlight</h1>
-          </div>
-          <div class="header-item hide-mobile">
-            <h5>Role</h5>
-            User Experience Manager
-          </div>
-          <div class="header-item hide-mobile">
-            <h5>Responsibilities</h5>
-            Growth Design <br />
-            UX Program Management
-          </div>
-          <div class="header-item hide-mobile">
-            <h5>Technologies</h5>
-            Figma <br />
-            Trello <br />
-            Jira <br />
-          </div>
-        </div>
-        <div class="flex" style="flex-direction: row">
-          <div style="flex: 2; padding: 36px">
-            <p style="text-align: right">
-              Elevated content at speed and scale. Simplify the complex
-              omnichannel content creation process and focus on your customer
-              journey.
-            </p>
-          </div>
-          <div
-            class="links"
-            style="
-              flex: 1;
-              padding: 36px;
-              max-width: 300px;
-              border-left: 2px solid lightgray;
-            "
-          >
-            <a href="https://www.splashlight.com">Website</a>
-          </div>
-        </div>
-        <div
-          class="flex img-viewer"
-          style="flex: 1; flex-direction: row-reverse"
-        >
-          <aside class="flex img-viewer-aside">
-            <img
-              onclick="document.getElementById('video-4').setAttribute('style', 'display: none;');
-              document.getElementById('viewer-4').setAttribute('style', 'display: block;');
-              document.getElementById('viewer-4').setAttribute('src', 's1.png')"
-              src="s1.png"
-              loading="lazy"
-            />
-            <img
-              onclick="document.getElementById('video-4').setAttribute('style', 'display: none;');
-            document.getElementById('viewer-4').setAttribute('style', 'display: block;');
-            document.getElementById('viewer-4').setAttribute('src', 's2.png')"
-              src="s2.png"
-              loading="lazy"
-            />
-            <img
-              onclick="document.getElementById('video-4').setAttribute('style', 'display: none;');
-              document.getElementById('viewer-4').setAttribute('style', 'display: block;');
-              document.getElementById('viewer-4').setAttribute('src', 's3.png')"
-              src="s3.png"
-              loading="lazy"
-            />
-            <video
-              style="border: 2px solid lightgray"
-              onclick="document.getElementById('viewer-4').setAttribute('style', 'display: none;');
-              document.getElementById('video-4').setAttribute('style', 'display: block; border: 2px solid lightgray;');"
-            >
-              <source src="s1.mp4" type="video/mp4" />
-            </video>
-          </aside>
-          <div style="flex: 2; margin-right: 36px">
-            <img
-              id="viewer-4"
-              class="img-viewer-main"
-              src="s1.png"
-              loading="lazy"
-            />
-            <video
-              id="video-4"
-              controls
-              autoplay="true"
-              style="display: none; border: 2px solid lightgray"
-            >
-              <source src="s1.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-        <!-- 4 End Article ------------------------------------------------- -->
-        <footer
-          style="
-            border-top: 2px solid lightgray;
-            border-bottom: 2px solid lightgray;
-            margin-top: 220px;
-          "
-        >
-          <!-- Light 2 Col Section -->
-          <div class="flex" style="z-index: 9; background-color: white">
-            <div style="flex: 2; padding: 36px">
-              <p>© 2022</p>
+            <h1>Work Samples</h1>
+            <div class="grid">
+                <img class="img" src="a1.png" loading="lazy" onclick="openModal();currentSlide(1)" />
+                <img class="img" src="a2.png" loading="lazy" onclick="openModal();currentSlide(2)" />
+                <img class="img" src="d1.png" loading="lazy" onclick="openModal();currentSlide(3)" />
+                <img class="img" src="d2.png" loading="lazy" onclick="openModal();currentSlide(4)" />
             </div>
-            <div style="flex: 1; padding: 36px; max-width: 300px">
-              <a href="https://github.com/mclarkedev" target="_blank">Github</a>
-              <a
-                href="https://www.linkedin.com/in/mattclarkedev/"
-                target="_blank"
-                >LinkedIn</a
-              >
-              <a href="https://calendly.com/mclarkestudio/30" target="_blank"
-                >Calendly</a
-              >
-              <a href="/Matthew Clarke - Resume 2022.pdf" target="_blank"
-                >Resume</a
-              >
-            </div>
-          </div>
-        </footer>
-      </main>
-    </div>
-    <script src="script.js"></script>
-  </body>
+            <h1>Readings</h1>
+            <ul>
+                <li>
+                    <a target="_blank"
+                        href="https://librarianshipwreck.files.wordpress.com/2016/07/islandsinthecyberstream_introduction_loeb.pdf">
+                        Islands in the Cyberstream (2006)
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank"
+                        href="http://blogs.evergreen.edu/cpat/files/2013/05/Computer-Power-and-Human-Reason.pdf">
+                        Computer Power and Human Reason (1979)
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank"
+                        href="https://www.oreilly.com/library/view/storytelling-in-design/9781491959411/">
+                        Storytelling in Design (2019)
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/norvig/paip-lisp">
+                        Paradigms of Artificial Intelligence Programming (1992)
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank"
+                        href="https://ptgmedia.pearsoncmg.com/images/9780321934116/samplepages/0321934113.pdf">
+                        Peopleware (1999)
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://maketime.blog/">
+                        Make Time (2018)
+                    </a>
+                </li>
+            </ul>
+            <h1>Videos</h1>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=6ZdxiQoOBgs&ab_channel=AbbasTaher">
+                        History of Computers & User Interface Images
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=oKg1hTOQXoY&ab_channel=JeffGonis">
+                        Alan Kay at OOPSLA 1997
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.infoq.com/presentations/Simple-Made-Easy/">
+                        Simple Made Easy, Rich Hickey
+                    </a>
+                </li>
+            </ul>
+            <h1>Contact</h1>
+            <p>
+                If you feel we share similar values, I'm always happy to chat about new
+                opportunities and review your team's needs. I'm currently
+                prioritizing creative agencies or domains with creative end-users. Is
+                that you? Get in touch!
+            </p>
+            <p>Portfolio reviews available on request.</p>
+            <a target="_blank" href="mailto:mclarkestudio@gmail.com">mclarkestudio@gmail.com</a>
+            <a href="https://github.com/mclarkedev" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/mattclarkedev/" target="_blank">LinkedIn</a>
+            <div id="three"></div>
+        </main>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; " onclick="closeModal()"></div>
+
+            <!-- Next/previous controls -->
+            <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+            <div class="next" onclick="plusSlides(1)">&#10095;</div>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="a1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="a2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="d1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="d2.png" style="width:100%">
+                </div>
+
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <script src="script.js"></script>
+                <script src="lightbox.js"></script>
+
+</body>
+
 </html>

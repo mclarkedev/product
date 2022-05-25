@@ -11,10 +11,6 @@ var renderer = new THREE.WebGLRenderer({
   alpha: true,
 });
 var canvas = renderer.domElement;
-canvas.setAttribute(
-  "style",
-  "position: absolute; top: 0px; right: 0; width: 200%; height: 100%; max-height: 1200px; max-width: 1475px; z-index: 2"
-);
 var div = document.getElementById("three");
 div.appendChild(canvas);
 
@@ -39,11 +35,11 @@ var material = new THREE.ShaderMaterial({
   fragmentShader: `
     uniform vec3 color1;
     uniform vec3 color2;
-  
+
     varying vec2 vUv;
-    
+
     void main() {
-      
+
       gl_FragColor = vec4(mix(color1, color2, vUv.y), 1.0);
     }
   `,
