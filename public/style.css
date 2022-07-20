@@ -8,30 +8,15 @@ body {
 }
 
 .three {
-  /* position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px; */
-  /* height: 250px; */
-  /* opacity: 50; */
+  height: 250px;
 }
 
 /* Three JS */
 canvas {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  transform: translateX(-50%, -50%);
-  /* margin-top: 30px; */
-  width: 100%;
-  height: 100%;
-  /* width: 600px;
-  height: 250px; */
+  margin-top: 30px;
+  width: 600px;
+  height: 250px;
   z-index: -1;
-  opacity: 50%;
 }
 
 .main-container {
@@ -45,12 +30,7 @@ main {
   width: 600px;
   margin: auto;
   margin-top: 200px;
-  margin-bottom: 200px;
   padding-bottom: 200px;
-  background-color: #131313;
-  padding: 45px;
-  /* border: 1px solid gray; */
-  border-radius: 45px;
 }
 
 a,
@@ -115,7 +95,7 @@ a::before {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.7rem;
   line-height: 144%;
   margin: 0px;
   font-style: normal;
@@ -128,6 +108,7 @@ p {
 h1 {
   font-size: 16px;
   font-weight: 700;
+  margin-top: 24px;
   margin-bottom: 4rem;
   margin-top: 6rem;
 }
@@ -150,23 +131,13 @@ figcaption {
   margin-top: 24px;
 }
 
-td {
-  border-bottom: 1px solid white;
-}
-
 .iframe-container {
   position: relative;
   display: block;
   overflow: hidden;
   width: 100%;
-  /* padding: 5rem; */
   padding-top: 64.6412037%; /* 1728 : 1117 Aspect Ratio (divide 1117 by 1728 = 0.646412037) */
-  /* outline: 3px solid red; */
   border: 2px solid rgba(0, 0, 0, 0.1);
-  /* border-left: 2px solid red; */
-  /* border-right: 2px solid yellow;
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1); */
 }
 
 .iframe {
@@ -178,13 +149,7 @@ td {
   right: 0;
   width: 100%;
   height: 100%;
-  /* margin: 2rem; */
-  /* opacity: 0; */
 }
-
-/* .iframe-container.focused {
-  background: linear-gradient(to left, yellow, red);
-} */
 
 @media (min-width: 1000px) {
 }
@@ -197,7 +162,7 @@ td {
 
 @media (max-width: 600px) {
   main {
-    width: calc(100% - 24px);
+    /* width: calc(100vw - 24px); */
     margin-left: 24px;
     margin-right: 24px;
   }
@@ -208,7 +173,7 @@ td {
   }
 
   canvas {
-    width: 100%;
+    width: calc(100% - 24px);
   }
 }
 
