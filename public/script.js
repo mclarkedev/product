@@ -84,3 +84,21 @@ var animation = bodymovin.loadAnimation({
   autoplay: true,
   path: "m-white.json",
 });
+
+// Poll for iframe state
+
+// function checkIframeFocus() {
+//   if (document.activeElement == document.getElementsByTagName("iframe")[0]) {
+//     console.log("iframe has focus");
+//     document
+//       .getElementsByClassName("iframe-container")[0]
+//       .setAttribute("class", "iframe-container focused");
+//   } else {
+//     document
+//       .getElementsByClassName("iframe-container")[0]
+//       .setAttribute("class", "iframe-container");
+//     console.log("iframe not focused");
+//   }
+// }
+
+// window.setInterval(checkIframeFocus, 1000);
